@@ -38,7 +38,7 @@ The data can be downloaded from http://www.dongnguyen.nl/data/dataset-nguyen-eis
 ## Experiments
 
 * *synthetic_data.ipynb*: This notebook plots several selected synthetic datasets and shows how to apply the methods to the different types of data (binary, categorical and frequency data).
-* *HSIC_main.ipynb*: This notebook illustrates HSIC with several synthetic (non-geographical) datasets.
+* *HSIC.ipynb*: This notebook illustrates HSIC with several synthetic (non-geographical) datasets.
 * *plots.r*: Shows how to generate the plots in the paper based on the result files in the *synthetic_experiments* directory.
  
 ## Command line tool
