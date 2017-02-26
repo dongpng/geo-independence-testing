@@ -78,7 +78,7 @@ def kernelMatrixDelta(m, m2):
 def columnDistanceDelta(col1, col2):  
     return np.array([1 if x==y else 0 for x,y in zip(col1, col2)])
 
-def HSIC_pval_old(X, Y, N_samp=100, kernelX="Gaussian", kernelY="Gaussian", sigmaX=None, sigmaY=None):
+def HSIC_pval_full_gram(X, Y, N_samp=100, kernelX="Gaussian", kernelY="Gaussian", sigmaX=None, sigmaY=None):
     """ Calculates HSIC and p-value 
     
     Old implementation that calculates complete Gramm matrices

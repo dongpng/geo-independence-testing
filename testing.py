@@ -86,6 +86,10 @@ class MyTest(unittest.TestCase):
         self.assertAlmostEqual(0.014440, HSIC.HSIC_pval(X1,Y1,5,"Gaussian","Gaussian")[0], places=5)
         self.assertAlmostEqual(0.072315, HSIC.HSIC_pval(X2,Y2,5,"Gaussian","Gaussian")[0], places=5)
         self.assertAlmostEqual(0.069226, HSIC.HSIC_pval(X3,Y3,5,"Gaussian","Gaussian")[0], places=5)
+        self.assertAlmostEqual(0.10755, HSIC.HSIC_pval_full_gram(X1,X1,5,"Gaussian","Gaussian")[0], places=5)
+        self.assertAlmostEqual(0.014440, HSIC.HSIC_pval_full_gram(X1,Y1,5,"Gaussian","Gaussian")[0], places=5)
+        self.assertAlmostEqual(0.072315, HSIC.HSIC_pval_full_gram(X2,Y2,5,"Gaussian","Gaussian")[0], places=5)
+        self.assertAlmostEqual(0.069226, HSIC.HSIC_pval_full_gram(X3,Y3,5,"Gaussian","Gaussian")[0], places=5)
 
     def test_Cholesky(self):
         A = np.array([[8,2,3], [2,1,5], [3,5,4]], dtype=np.float)
